@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="20dp"
+    tools:context=".SignUpActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/userFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autofillHints="Enter Your Passwpord"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/first_name"
+                android:inputType="text"
+                android:maxLength="15"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/userLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:autofillHints="Enter Your Passwpord"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/last_name"
+                android:inputType="text"
+                android:maxLength="15"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/userAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Enter Your Passwpord"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/etDoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:autofillHints="Enter Your Passwpord"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/date_of_birth"
+                android:inputType="text"
+                android:maxLength="15"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+
+                <RadioGroup
+                    android:id="@+id/rgRadioG"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="3dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/input_custom">
+
+                    <RadioButton
+                        android:id="@+id/Rmale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_weight=".5"
+                        android:text="@string/male" />
+
+                    <RadioButton
+                        android:id="@+id/Rfemle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="@string/female" />
+
+                </RadioGroup>
+
+            <EditText
+                android:id="@+id/etConte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:autofillHints="Enter Your Passwpord"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/contact"
+                android:inputType="number"
+                android:maxLength="12"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Enter Your Passwpord"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:autofillHints="Enter Your Passwpord"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/password"
+                android:inputType="text"
+                android:maxLength="15"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Confirm Password"
+                android:background="@drawable/input_custom"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/inter_regular"
+                android:hint="@string/confirm_password"
+                android:inputType="text"
+                android:maxLength="15"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:id="@+id/SignIn_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="26dp"
+                android:background="@drawable/theme_stroke_background"
+                android:backgroundTint="@color/theme"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:padding="13dp"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

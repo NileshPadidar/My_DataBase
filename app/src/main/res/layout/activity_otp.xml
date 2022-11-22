@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".OtpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        tools:ignore="Suspicious0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight=".7"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/mobile_no"
+            android:textColor="@color/light_blue"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/etOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_custom"
+            android:fontFamily="@font/inter_medium"
+            android:hint="Enter OTP"
+            android:gravity="center"
+            android:inputType="number"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="6dp"
+            android:text="@string/resend_otp"
+            android:textColor="@color/light_blue"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/btn_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/theme_stroke_background"
+            android:backgroundTint="@color/theme"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:padding="13dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
